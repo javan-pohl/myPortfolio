@@ -18,7 +18,8 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  cursor: pointer;
+  color: #0016e0;
 }
 
 img {

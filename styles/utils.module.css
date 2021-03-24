@@ -50,8 +50,10 @@
   width: 100%;
 }
 
-.blogLink:hover {
+.blogLink {
   cursor: pointer;
+  text-decoration: none !important;
+  color: #0070f3;
 }
 
 .colorInherit {
@@ -69,13 +71,25 @@
 }
 
 .listItem {
+  cursor: pointer;
   padding: 5px 10px;
   margin: 0 0 1.25rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.listItem h2 {
+  margin: 10px 10px 5px 0px;
+  font-size: 26px;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: #0070f3;
+}
 .listItem:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 12, 185, 0.2), 0 6px 20px 0 rgba(0, 17, 248, 0.19);
+  text-decoration: none !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 12, 185, 0.2),
+    0 6px 20px 0 rgba(0, 17, 248, 0.19);
+}
+.listItem:hover h2 {
+  color: #5500f3;
 }
 
 .listItem:active {
@@ -84,4 +98,80 @@
 
 .lightText {
   color: #666;
+}
+.main {
+  height: 100vh;
+  background-image: url(../public/images/black-brick-wall-texture.jpg);
+  background-size: contain;
+}
+.mainName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 0%;
+}
+ul.linkNavUl {
+  color: blue;
+  width: 75%;
+  margin: auto;
+  padding: 0 3.5rem 0 3.5rem;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: neon;
+  src: url(hello-denver-display/hellodenverdisplayregular_v1.6.ttf);
+}
+.neonWrapper {
+  width: 100%;
+}
+
+.neonText {
+  font-size: 20px;
+  font-weight: 100;
+  color: #57a7f2;
+  text-shadow: 
+  .1vw 0vw .25vw #579ff2, .2vw 0vw .25vw #579ff2, .4vw 0vw .25vw #579ff2, 
+
+  .1vw 0vw   0vw #579ff2, .2vw 0vw   0vw #579ff2, .4vw 0vw   0vw #579ff2,
+  .1vw 0vw  .1vw #579ff2, .2vw 0vw  .1vw #579ff2, .4vw 0vw  .1vw #579ff2,
+  .1vw 0vw   2vw #579ff2, .2vw 0vw   2vw #579ff2, .4vw 0vw   2vw #579ff2, 
+  
+  .1vw 0vw   1vw #0b1ae5, .2vw 0vw   1vw #0b1ae5, .4vw 0vw   5vw #0b1ae5, 
+  .1vw 0vw   5vw #0b1ae5, .2vw 0vw  20vw #0b1ae5, .4vw 0vw  10vw #0b1ae5,
+  .1vw 0vw  10vw #0b1ae5, .2vw 0vw  30vw #0b1ae5, .4vw 0vw  10vw #0b1ae5;
+}
+.neonText h1{
+  font-family: neon;
+  font-size: 8rem; 
+  width: 100%;
+  font-weight: 100;
+  text-align: center;
+  padding: 0 3.5rem 0 3.5rem;  
+}
+.neonText2 h1{
+  font-family: neon;
+  font-size: 8rem; 
+  width: 100%;
+  font-weight: 100;
+  text-align: center;
+  padding: 0 3.5rem 0 3.5rem;  
+}
+.neonText2 {
+  font-size: 20px;
+  font-weight: 100;
+  color: #57a7f2;
+  text-shadow: 
+  .1vw 0vw .25vw #579ff2, .2vw 0vw .25vw #579ff2, .4vw 0vw .25vw #579ff2, 
+
+  .1vw 0vw   0vw #0071f3, .2vw 0vw   0vw #0071f3, .4vw 0vw   0vw #0071f3,
+  .1vw 0vw  .1vw #0071f3, .2vw 0vw  .1vw #0071f3, .4vw 0vw  .1vw #0071f3,
+  .1vw 0vw   2vw #0071f3, .2vw 0vw   2vw #0071f3, .4vw 0vw   2vw #0071f3, 
+  
+  .1vw 0vw   1vw #0b1ae5, .2vw 0vw   1vw #0b1ae5, .4vw 0vw   5vw #0b1ae5, 
+  .1vw 0vw   5vw #0b1ae5, .2vw 0vw  20vw #0b1ae5, .4vw 0vw  10vw #0b1ae5,
+  .1vw 0vw  10vw #0b1ae5, .2vw 0vw  30vw #0b1ae5, .4vw 0vw  10vw #0b1ae5;
 }

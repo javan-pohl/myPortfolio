@@ -1,9 +1,9 @@
-import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../lib/posts'
+import Layout from '../../../components/layout'
+import { getAllPostIds, getPostData } from '../../../lib/posts'
 import Paper from '@material-ui/core/Paper'
-import utilStyles from '../../styles/utils.module.css'
+import utilStyles from '../../../styles/utils.module.css'
 import Head from 'next/head'
-import Date from '../../components/date'
+import Date from '../../../components/date'
 
 // gets basic post data
 export async function getStaticProps({ params }) {
