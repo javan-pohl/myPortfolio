@@ -1,20 +1,9 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
+import { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
-import Date from '../components/date'
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData,
-    },
-  }
-}
-
-export default function Home({ allPostsData }) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -31,13 +20,13 @@ export default function Home({ allPostsData }) {
         <section className={utilStyles.linkNav}>
           <ul className={utilStyles.linkNavUl}>
             <Link href="about-me">
-              <li className={utilStyles.neonText}>ABOUT ME</li>
+              <li className={utilStyles.neonText3}>ABOUT ME</li>
             </Link>
             <Link href="projects">
-              <li className={utilStyles.neonText}>PROJECTS</li>
+              <li className={utilStyles.neonText3}>PROJECTS</li>
             </Link>
             <Link href="blog">
-              <li className={utilStyles.neonText}>BLOG</li>
+              <li className={utilStyles.neonText3}>BLOG</li>
             </Link>
           </ul>
         </section>

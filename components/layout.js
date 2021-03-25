@@ -6,28 +6,28 @@ import Link from 'next/link'
 import NavBar from '../components/navBar'
 
 const name = 'Javan Pohl'
-export const siteTitle = name
+export const siteTitle = name + ' Portfolio Website'
 
 export default function Layout({ children, home, current }) {
   return (
     <>
-        <Head>
-          <link rel="icon" href="/favicon.ico" />
-          <meta
-            name="description"
-            content="Learn how to build a personal website using Next.js"
-          />
-          <meta
-            property="og:image"
-            content={`https://og-image.vercel.app/${encodeURI(
-              siteTitle,
-            )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-          />
-          <meta name="og:title" content={siteTitle + ' ' + current} />
-          <meta name="twitter:card" content="summary_large_image" />
-        </Head>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Learn how to build a personal website using Next.js"
+        />
+        <meta
+          property="og:image"
+          content={`https://og-image.vercel.app/${encodeURI(
+            siteTitle,
+          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+        />
+        <meta name="og:title" content={siteTitle + ' ' + current} />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
+      <div className={styles.marquee}>
         <NavBar mainClass={utilStyles.navBar} current={current} />
-      <div className={styles.container}>
         <header className={styles.header}>
           {home ? (
             <>
@@ -49,8 +49,8 @@ export default function Layout({ children, home, current }) {
                     priority
                     src="/images/profile.jpg"
                     className={utilStyles.borderCircle}
-                    height={108}
-                    width={108}
+                    height={200}
+                    width={200}
                     alt={name}
                   />
                 </a>
@@ -63,6 +63,8 @@ export default function Layout({ children, home, current }) {
             </>
           )}
         </header>
+      </div>
+      <div className={styles.container}>
         <main>{children}</main>
         {!home && (
           <div className={styles.backToHome}>

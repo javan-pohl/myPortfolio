@@ -3,10 +3,19 @@
   max-width: 1000px;
   padding: 5% 1rem;
   margin: 0 auto 6rem;
+  background-color: grey;
 }
-
+.marquee {
+  width: 100%;
+  background-image: url(../public/images/2006-07-14-Denver_Skyline_Midnight_B&W.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  max-height: 580px;
+}
 .header {
   display: flex;
+  padding: 8%;
   flex-direction: column;
   align-items: center;
 }
