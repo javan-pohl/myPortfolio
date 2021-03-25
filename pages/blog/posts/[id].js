@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper'
 import utilStyles from '../../../styles/utils.module.css'
 import Head from 'next/head'
 import Date from '../../../components/date'
+import { useRouter } from 'next/router'
 
 // gets basic post data
 export async function getStaticProps({ params }) {
@@ -25,8 +26,10 @@ export async function getStaticPaths() {
 }
 
 export default function Post({ postData }) {
+  const router = useRouter()
+  let thisPath = router.pathname.substr(1)
   return (
-    <Layout>
+    <Layout current={thisPath}>
       <Head>
         <title>{postData.title}</title>
       </Head>

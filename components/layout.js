@@ -9,6 +9,8 @@ const name = 'Javan Pohl'
 export const siteTitle = name + ' Portfolio Website'
 
 export default function Layout({ children, home, current }) {
+  let pageName = current.indexOf('/') >= 0 ? current.substring(0, current.indexOf('/')).replace('-', ' ') : current.substring(0).replace('-', ' ');
+  console.log('pageName: ', pageName)
   return (
     <>
       <Head>
@@ -36,20 +38,21 @@ export default function Layout({ children, home, current }) {
               alt={name}
             />
             <div className={styles.headerCardInner}>
-              <h2 className={utilStyles.headingLg}>{name}</h2>
+              <h2
+                className={utilStyles.headingMd}
+                style={{ color: 'rgb(2, 193, 252)' }}
+              >
+                {name}
+              </h2>
+              <section className={utilStyles.headingMd}>
+                <h2>{pageName}</h2>
+              </section>
             </div>
           </div>
         </header>
       </div>
       <div className={styles.container}>
         <main>{children}</main>
-        {!home && (
-          <div className={styles.backToHome}>
-            <Link href="/">
-              <a>← Back to home</a>
-            </Link>
-          </div>
-        )}
       </div>
     </>
   )

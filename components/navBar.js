@@ -3,9 +3,9 @@ import Link from 'next/link'
 // let myLinks = process.env.links
 const myLinks = [
   { href: '/', text: 'HOME' },
-  { href: 'about-me', text: 'ABOUT ME' },
-  { href: 'projects', text: 'PROJECTS' },
-  { href: 'blog', text: 'BLOG' },
+  { href: '/about-me', text: 'ABOUT ME' },
+  { href: '/projects', text: 'PROJECTS' },
+  { href: '/blog', text: 'BLOG' },
 ]
 
 export default function NavBar({ mainClass, current }) {
