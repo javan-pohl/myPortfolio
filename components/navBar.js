@@ -15,7 +15,7 @@ export default function NavBar({ mainClass, current }) {
         {myLinks.map(({ href, text }) => {
           return (
             <Link href={href} key={text}>
-              <li className={href == current ? 'navBarActive' : ''}>{text}</li>
+              <li className={href == current ? 'navBarActive' : 'pointer'}>{text}</li>
             </Link>
           )
         })}

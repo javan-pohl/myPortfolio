@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <Layout current={thisPath}>
         <section className={utilStyles.headingMd}>
-          <p>{thisPath}</p>
+          <h1>{thisPath.replace('-', ' ')}</h1>
         </section>
       </Layout>
     </>

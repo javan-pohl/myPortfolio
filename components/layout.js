@@ -15,7 +15,7 @@ export default function Layout({ children, home, current }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Javan Pohl's portfolio website containing information about him and projects he's worked on"
         />
         <meta
           property="og:image"
@@ -29,39 +29,17 @@ export default function Layout({ children, home, current }) {
       <div className={styles.marquee}>
         <NavBar mainClass={utilStyles.navBar} current={current} />
         <header className={styles.header}>
-          {home ? (
-            <>
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={144}
-                width={144}
-                alt={name}
-              />
-              <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            </>
-          ) : (
-            <>
-              <Link href="/">
-                <a>
-                  <Image
-                    priority
-                    src="/images/profile.jpg"
-                    className={utilStyles.borderCircle}
-                    height={200}
-                    width={200}
-                    alt={name}
-                  />
-                </a>
-              </Link>
-              <h2 className={utilStyles.headingLg}>
-                <Link href="/">
-                  <a className={utilStyles.colorInherit}>{name}</a>
-                </Link>
-              </h2>
-            </>
-          )}
+          <div className={styles.headerCard}>
+            <img
+              src="/images/profile.jpg"
+              className={utilStyles.borderCircle}
+              alt={name}
+            />
+            <div className={styles.headerCardInner}>
+              test
+              <h2 className={utilStyles.headingLg}>{name}</h2>
+            </div>
+          </div>
         </header>
       </div>
       <div className={styles.container}>

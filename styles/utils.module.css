@@ -17,16 +17,22 @@
 .headingLg {
   font-size: 1.5rem;
   line-height: 1.4;
-  margin: 1rem 0;
+  margin: 0 0;
+  position: relative;
 }
 
 .headingMd {
   font-size: 1.2rem;
   line-height: 1.5;
+  text-transform: capitalize;
 }
 
 .borderCircle {
   border-radius: 9999px;
+  position: relative;
+  top: -100px;
+  height: 200px;
+  width: 200px;
 }
 
 .blogBody {
@@ -142,10 +148,6 @@ ul.linkNavUl {
   list-style-type: none;
 }
 
-ul.linkNavUl > li:hover {
-  cursor: pointer;
-}
-
 @font-face {
   font-family: neon;
   src: url(hello-denver-display/hellodenverdisplayregular_v1.6.ttf);
@@ -154,27 +156,6 @@ ul.linkNavUl > li:hover {
   width: 100%;
 }
 
-.neonText {
-  font-size: 24px;
-  font-weight: 100;
-  color: #57a7f2;
-  text-shadow: 0.1vw 0vw 0.25vw #57a7f2, 0.2vw 0vw 0.25vw #57a7f2,
-    0.4vw 0vw 0.25vw #57a7f2, 0.1vw 0vw 0vw #0071f3, 0.2vw 0vw 0vw #0071f3,
-    0.4vw 0vw 0vw #0071f3, 0.1vw 0vw 0.1vw #0071f3, 0.2vw 0vw 0.1vw #0071f3,
-    0.4vw 0vw 0.1vw #0071f3, 0.1vw 0vw 2vw #0071f3, 0.2vw 0vw 2vw #0071f3,
-    0.4vw 0vw 2vw #0071f3, 0.1vw 0vw 1vw #0b1ae5, 0.2vw 0vw 1vw #0b1ae5,
-    0.4vw 0vw 5vw #0b1ae5, 0.1vw 0vw 5vw #0b1ae5, 0.2vw 0vw 20vw #0b1ae5,
-    0.4vw 0vw 10vw #0b1ae5, 0.1vw 0vw 10vw #0b1ae5, 0.2vw 0vw 30vw #0b1ae5,
-    0.4vw 0vw 10vw #0b1ae5;
-}
-.neonText h1 {
-  font-family: neon;
-  font-size: 12rem;
-  width: 100%;
-  font-weight: 100;
-  text-align: center;
-  padding: 0 3.5rem 0 3.5rem;
-}
 .neonText2 h1 {
   font-family: neon;
   font-size: 8rem;
@@ -199,17 +180,6 @@ ul.linkNavUl > li:hover {
   text-shadow: 0.1em 0em 0.25em #579ff2, 0.01em 0em 0.1em #0071f3,
     0.01em 0em 2em #0071f3, 0.1em 0em 1em #0b1ae5, 0.1em 0em 1em #0b1ae5,
     0.1em 0em 5em #0b1ae5, 0.1em 0em 5em #0b1ae5, 0.1em 0em 10em #0b1ae5;
-}
-.neonText3:hover {
-  color: #ffd8d8;
-  text-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
-    0.4vw 0vw 0.25vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.2vw 0vw 0vw #f25757,
-    0.4vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.2vw 0vw 0.1vw #f25757,
-    0.4vw 0vw 0.1vw #f25757, 0.1vw 0vw 2vw #f25757, 0.2vw 0vw 2vw #f25757,
-    0.4vw 0vw 2vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
-    0.4vw 0vw 5vw #e50b0b, 0.1vw 0vw 5vw #e50b0b, 0.2vw 0vw 20vw #e50b0b,
-    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b, 0.2vw 0vw 30vw #e50b0b,
-    0.4vw 0vw 10vw #e50b0b;
 }
 
 .neonText3:hover {

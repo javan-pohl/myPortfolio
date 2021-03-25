@@ -32,3 +32,6 @@ img {
 .navBarActive {
   color: rgb(2, 193, 252) !important;
 }
+.pointer:hover {
+  cursor: pointer;
+}
