@@ -13,7 +13,10 @@ export default function Home() {
         <section className={utilStyles.mainName}>
           <div className={utilStyles.neonWrapper}>
             <div className={utilStyles.neonText2}>
-              <h1>JAVAN POHL</h1>
+              <h1>
+                <div className={utilStyles.neonDiv}>JAVAN</div> 
+                <div className={utilStyles.neonDiv2}>{'\u00A0'}POHL</div>
+              </h1>
             </div>
           </div>
         </section>

@@ -28,6 +28,7 @@
 }
 
 .borderCircle {
+  margin: auto;
   border-radius: 9999px;
   position: relative;
   top: -100px;
@@ -152,11 +153,25 @@ ul.linkNavUl {
   font-family: neon;
   src: url(hello-denver-display/hellodenverdisplayregular_v1.6.ttf);
 }
+.neonDiv {
+  margin: 0 0 0 0 ;
+  padding: 0;
+  display: inline;
+}.neonDiv2 {
+  margin: 0 0 0 0;
+  display: inline;
+}
 .neonWrapper {
   width: 100%;
+  text-align: center;
 }
 
 .neonText2 h1 {
+  line-height: 1em;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
   font-family: neon;
   font-size: 8rem;
   width: 100%;
@@ -165,6 +180,7 @@ ul.linkNavUl {
   padding: 0 3.5rem 0 3.5rem;
 }
 .neonText2 {
+  text-align: center;
   font-size: 24px;
   font-weight: 100;
   color: #57a7f2;

@@ -36,7 +36,6 @@ export default function Layout({ children, home, current }) {
               alt={name}
             />
             <div className={styles.headerCardInner}>
-              test
               <h2 className={utilStyles.headingLg}>{name}</h2>
             </div>
           </div>
