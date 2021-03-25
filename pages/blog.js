@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
+import { useRouter } from 'next/router'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -15,14 +16,12 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+  const router = useRouter()
+  let thisPath = router.pathname.substr(1)
   return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
+    <Layout current={thisPath}>
       <section className={utilStyles.headingMd}>
-        <p>Here be my blog posts
-        </p>
+        <p>{thisPath}</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
