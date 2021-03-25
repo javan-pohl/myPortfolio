@@ -23,13 +23,13 @@ export default function Home() {
         <section className={utilStyles.linkNav}>
           <ul className={utilStyles.linkNavUl}>
             <Link href="about-me">
-              <li className={utilStyles.neonText3}>ABOUT ME</li>
+              <li className={`${utilStyles.neonText3} pointer`}>ABOUT ME</li>
             </Link>
             <Link href="projects">
-              <li className={utilStyles.neonText3}>PROJECTS</li>
+              <li className={`${utilStyles.neonText3} pointer`}>PROJECTS</li>
             </Link>
             <Link href="blog">
-              <li className={utilStyles.neonText3}>BLOG</li>
+              <li className={`${utilStyles.neonText3} pointer`}>BLOG</li>
             </Link>
           </ul>
         </section>

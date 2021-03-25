@@ -9,13 +9,21 @@ const myLinks = [
 ]
 
 export default function NavBar({ mainClass, current }) {
+  let newCurrent =
+    '/' +
+    (current.indexOf('/') >= 0
+      ? current.substring(0, current.indexOf('/'))
+      : current.substring(0))
   return (
     <section className={mainClass}>
       <ul>
         {myLinks.map(({ href, text }) => {
+          // console.log('href, newCurrent: ', href, newCurrent)
           return (
             <Link href={href} key={text}>
-              <li className={href == current ? 'navBarActive' : 'pointer'}>{text}</li>
+              <li className={href == newCurrent ? 'navBarActive' : 'pointer'}>
+                {text}
+              </li>
             </Link>
           )
         })}

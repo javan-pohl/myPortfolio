@@ -35,11 +35,10 @@ export default function Post({ postData }) {
       </Head>
       <article>
         <Paper className={utilStyles.blogBody} elevation={3}>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+          <h1 className={utilStyles.heading2Xl}>{postData.title}</h1>
           <div className={utilStyles.blogDate}>
             <Date dateString={postData.date} />
           </div>
-          <br />
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </Paper>
       </article>

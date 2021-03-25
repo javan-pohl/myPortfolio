@@ -35,3 +35,12 @@ img {
 .pointer:hover {
   cursor: pointer;
 }
+.neonText3 > li:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .headingXl {
+    font-size: 1rem;
+  }
+}
