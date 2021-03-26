@@ -1,26 +1,36 @@
 import Layout from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { useRouter } from 'next/router'
-// import { getSortedPostsData } from '../lib/posts'
+import { getBioData } from '../lib/bio'
+import Paper from '@material-ui/core/Paper'
+import path from 'path'
+// import Date from '../components/date'
 
-// export async function getStaticProps() {
-//   const allPostsData = getSortedPostsData()
-//   return {
-//     props: {
-//       allPostsData,
-//     },
-//   }
-// }
+const postsDirectory = path.join(process.cwd(), 'public')
 
-export default function Home() {
+export async function getStaticProps() {
+  const bioData = await getBioData()
+  return {
+    props: {
+      bioData,
+    },
+  }
+}
+
+export default function Home({ bioData }) {
   const router = useRouter()
   let thisPath = router.pathname.substr(1)
+  console.log('bioData: ', bioData)
   return (
     <>
       <Layout current={thisPath}>
-        <section className={utilStyles.headingMd}>
-          <h1>{thisPath.replace('-', ' ')}</h1>
-        </section>
+        <Paper className={utilStyles.blogBody} elevation={3}>
+          <div dangerouslySetInnerHTML={{ __html: bioData.contentHtml }} />
+        <a download="Javan-Pohl-Resume.docx.pdf" href="Javan-Pohl-Resume.docx.pdf" title="Javan-Pohl-Resume">Download Resume</a>
+        </Paper>
+        <Paper className={utilStyles.blogBody} elevation={3}>
+          <iframe className={utilStyles.resume} src="Javan-Pohl-Resume.docx.pdf"></iframe>
+        </Paper>
       </Layout>
     </>
   )
