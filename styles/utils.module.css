@@ -56,7 +56,7 @@
   color: #666;
   font-size: 18px;
   text-align: center;
-  width: 100%;  
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -156,10 +156,11 @@ ul.linkNavUl {
   src: url(hello-denver-display/hellodenverdisplayregular_v1.6.ttf);
 }
 .neonDiv {
-  margin: 0 0 0 0 ;
+  margin: 0 0 0 0;
   padding: 0;
   display: inline;
-}.neonDiv2 {
+}
+.neonDiv2 {
   margin: 0 0 0 0;
   display: inline;
 }
@@ -198,7 +199,6 @@ ul.linkNavUl {
     0.1em 0em 5em #0b1ae5, 0.1em 0em 5em #0b1ae5, 0.1em 0em 10em #0b1ae5;
 }
 
-
 .neonText3:hover {
   font-size: 24px;
   font-weight: 100;
@@ -220,5 +220,17 @@ ul.linkNavUl {
   }
   .blogBody > h1 {
     font-size: 30px;
+  }
+  .neonText2 h1 {
+    font-size: 6rem;
+    padding: 0 3rem 0 2.5rem;
+  }
+  .neonText3 {
+    font-size: 16px;
+    margin: 0 25px;
+  }
+
+  ul.linkNavUl {
+    width: 95%;
   }
 }

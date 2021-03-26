@@ -43,4 +43,7 @@ img {
   .headingXl {
     font-size: 1rem;
   }
+  .neonText2 h1 {
+    font-size: 36px;
+  } 
 }
