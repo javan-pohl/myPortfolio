@@ -3,6 +3,7 @@ import utilStyles from '../styles/utils.module.css'
 import { useRouter } from 'next/router'
 import { getSortedProjectsData } from '../lib/projects'
 import Link from 'next/link'
+import Date from '../components/date'
 
 export async function getStaticProps() {
   const allProjectsData = getSortedProjectsData()
