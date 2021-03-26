@@ -123,12 +123,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0% 0%;
+  padding-top: 15%;
 }
-.navBarActive {
-  color: yellow !important;
-  background-color: green;
-}
+
 .navBar {
   width: 100%;
 }
@@ -176,13 +173,11 @@ ul.linkNavUl {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
   font-family: neon;
   font-size: 8rem;
-  width: 100%;
   font-weight: 100;
-  text-align: center;
   padding: 0 3.5rem 0 3.5rem;
+  width: 100%;
 }
 .neonText2 {
   text-align: center;
@@ -202,9 +197,7 @@ ul.linkNavUl {
     0.01em 0em 2em #0071f3, 0.1em 0em 1em #0b1ae5, 0.1em 0em 1em #0b1ae5,
     0.1em 0em 5em #0b1ae5, 0.1em 0em 5em #0b1ae5, 0.1em 0em 10em #0b1ae5;
 }
-.neonText3 > li:hover {
-  cursor: pointer;
-}
+
 
 .neonText3:hover {
   font-size: 24px;
