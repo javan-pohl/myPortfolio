@@ -28,7 +28,7 @@ export async function getStaticPaths() {
 export default function Project({ projectData }) {
   const router = useRouter()
   let thisPath = router.pathname.substr(1)
-  console.log('projectData: ', projectData)
+  // console.log('projectData: ', projectData)
   return (
     <Layout current={thisPath}>
       <Head>
