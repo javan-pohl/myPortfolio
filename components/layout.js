@@ -10,7 +10,6 @@ export const siteTitle = name + ' Portfolio Website'
 
 export default function Layout({ children, home, current }) {
   let pageName = current.indexOf('/') >= 0 ? current.substring(0, current.indexOf('/')).replace('-', ' ') : current.substring(0).replace('-', ' ');
-  console.log('pageName: ', pageName)
   return (
     <>
       <Head>
