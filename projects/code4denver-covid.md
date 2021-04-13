@@ -14,12 +14,14 @@ Currently volunteering with the <a href="https://codefordenver.org/#/" target="_
 3. General **CSS spacing issues** (margin, padding, width, etc) resulted in excessive spacing that was not ideal for mobile viewing. (I fixed these issues by adding several **CSS Media Breakpoints**, CSS formatting that will only apply to display resolutions under or over a particular width. The main fix involved increasing the width of the graph cards to take up approximately 95% of the screen width.)
 
 **Before:**
+
 <img
   src="/images/covid-19-site-before.png"
   alt="covid 19 before image"
 />
 
 **After:**
+
 <img
   src="/images/covid-19-site-after.png"
   alt="covid 19 after image"
