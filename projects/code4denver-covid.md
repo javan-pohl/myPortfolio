@@ -3,7 +3,7 @@ title: 'Code4Denver COVID-19 Site'
 date: '2021-04-10'
 ---
 
-Currently volunteering with the Code for Denver group on their COVID-19 summary website.
+Currently volunteering with the <a href="https://codefordenver.org/#/" target="_blank">Code for Denver group</a> on their <a href="https://accessibility-covid-dashboard.netlify.app/" target="_blank">COVID-19 summary website</a>.
 
 ### BarChart Mobile Optimization Updates  (4/12/21)
 
