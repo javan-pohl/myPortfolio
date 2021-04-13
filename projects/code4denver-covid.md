@@ -11,7 +11,7 @@ Currently volunteering with the <a href="https://codefordenver.org/#/" target="_
 
 1. The **bars would become transparent** (the cause of which, I discovered, was that the 1px white border around each bar element was overlapping the primary colors of the neighboring bar elements. Trickier still was what CSS property I needed to change to get rid of this border. Turns out that on SVG shapes, the border is listed as **'stroke'**.)
 2. The **x-axis labels were overlapping** and becoming unreadable. (This I fixed by changing the format of the dates from July 1, 2021 to 7/1 and slightly reducing the font size.)
-3. General **CSS spacing issues** (margin, padding, width, etc) resulted in excessive spacing that was not ideal for mobile viewing. (I fixed these issues by adding several **CSS Media Breakpoints**, CSS formatting that will only apply to display resolutions under or over a particular width. The main fix being changing the width of the graph cards to take up most of the screen width.)
+3. General **CSS spacing issues** (margin, padding, width, etc) resulted in excessive spacing that was not ideal for mobile viewing. (I fixed these issues by adding several **CSS Media Breakpoints**, CSS formatting that will only apply to display resolutions under or over a particular width. The main fix involved increasing the width of the graph cards to take up approximately 95% of the screen width.)
 
 **Before:**
 <img
