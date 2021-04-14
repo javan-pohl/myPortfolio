@@ -20,7 +20,6 @@ export async function getStaticProps() {
 export default function Home({ bioData }) {
   const router = useRouter()
   let thisPath = router.pathname.substr(1)
-  console.log('bioData: ', bioData)
   return (
     <>
       <Layout current={thisPath}>
