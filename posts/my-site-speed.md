@@ -12,3 +12,7 @@ Here are some steps I'd like to take to increase my website's speed:
 3. Avoid (or takes some other steps to speed up) excessive redirects
 4. Ensure that text is visible while fonts are loading
 5. Experiment with static loading in Next.js
+6. Remove unused JavaScript  
+7. Minimize main-thread work8
+8. Eliminate render-blocing resources
+
