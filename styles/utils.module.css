@@ -112,10 +112,10 @@
   color: #666;
 }
 .main {
-  height: 1200px;
+  height: 100vh;
   max-width: 900px;
   margin: auto;
-  background-image: url(../public/images/black-brick-wall-texture.jpg);
+  background-image: url(../public/images/black-brick-wall-texture.webp);
   background-size: contain;
   background-position: center;
 }
@@ -236,5 +236,11 @@ ul.linkNavUl {
     width: 95%;
     padding: 20px ;
     justify-content: space-between;
+  }
+  .neonText3 {
+    text-shadow: none;
+  }
+  .neonText3:hover {
+    text-shadow: none;
   }
 }
