@@ -17,6 +17,16 @@ After much deliberation, **in 2020 I decided to put myself on a path to the soft
 
 I am open to many paths in software development, but **my main desire is to develop high-quality mobile applications**, or at least applications that optimize for the mobile experience (not just desktop). I want to fine-tune my development skills so that I can **one day lead teams or companies to delivery high-quality products to the customer**.
 
+## Ok, but *who am I*?
+
+In my day-to-day life you can usually find me: exercising; watching movies/anime; trying to make healthy food interesting; dressing up in a costume for some silly, themed event; or working on some fun project at home. I'm continuously working on self-improvement and love helping others do the same. 
+
+If you really want to bring out my chatty side, start talking to me about movies, particularly ones with some profound message about life (one of these days I'm going to put together a video talk on what everybody is missing about *Starship Troopers*--even the ones that *think* they "get it".) 
+
+Speaking of movies, my primary goal in life is to construct the perfect home theater. Although my passion for that is somewhat waning in recent years as the movie studios (I'm looking at you, Disney) seem to be intent on (de)optimizing the at-home movie experience for lower-quality streaming.
+
+I also have a terrible habit of making incredibly bad puns. Particularly in extremely vague fashion so as to test the pun-detection skills of those around me. 
+
 ## Software Philosophy
 
 Focuses on **intuitive UX design** and configuring the stack design for **low latency.** Prefers to acquire a **deep understanding of concepts** in order to master the technology. **Facilitates clear communication** between teams and in documentation by **clarifying ambiguities in language**.
