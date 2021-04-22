@@ -25,7 +25,7 @@ If you really want to bring out my chatty side, start talking to me about movies
 
 Speaking of movies, my primary goal in life is to construct the perfect home theater. Although my passion for that is somewhat waning in recent years as the movie studios (I'm looking at you, Disney) seem to be intent on (de)optimizing the at-home movie experience for lower-quality streaming.
 
-I also have a terrible habit of making incredibly bad puns. Particularly in extremely vague fashion so as to test the pun-detection skills of those around me. (No there aren't any here that you missed. Puns are about being quick-witted--putting them in written form is basically cheating)
+I also have a terrible habit of making incredibly bad puns. Particularly in extremely vague fashion so as to test the pun-detection skills of those around me. (No there aren't any here that you missed. Puns are about being quick-witted--putting them in written form is basically cheating.)
 
 ## Software Philosophy
 
