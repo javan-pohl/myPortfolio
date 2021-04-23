@@ -38,3 +38,4 @@ Continuous improvement. **Never stop learning**.
 ## Software Skills
 
 Strongly skilled in React, CSS, Nodes.js, Express, git, and SQL. Also experienced with: Redux, Mongodb, PostgreSQL, RESTful APIs, mySQL, Docker, Mocha. Lately I have been working on learning vim, regex, and Jest.
+
