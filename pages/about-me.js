@@ -21,7 +21,6 @@ export default function Home({ bioData }) {
   const router = useRouter()
   let thisPath = router.pathname.substr(1)
   return (
-    <>
       <Layout current={thisPath}>
         <Paper className={utilStyles.blogBody} elevation={3}>
           <div dangerouslySetInnerHTML={{ __html: bioData.contentHtml }} />
@@ -31,6 +30,5 @@ export default function Home({ bioData }) {
           <iframe className={utilStyles.resume} src="Javan-Pohl-Resume.docx.pdf"></iframe>
         </Paper>
       </Layout>
-    </>
   )
 }

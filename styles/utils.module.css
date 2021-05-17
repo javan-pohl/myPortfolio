@@ -158,6 +158,7 @@ ul.linkNavUl {
 @font-face {
   font-family: neon;
   src: url(hello-denver-display/hellodenverdisplayregular_v1.6.ttf);
+  font-display: swap;
 }
 .neonDiv {
   margin: 0 0 0 0;
