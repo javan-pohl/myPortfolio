@@ -30,7 +30,7 @@ export default function Layout({ children, home, current }) {
         <header className={styles.header}>
           <div className={styles.headerCard}>
             <img
-              src="/images/profile.jpg"
+              src="/images/profile.webp"
               className={utilStyles.borderCircle}
               alt={name}
             />
