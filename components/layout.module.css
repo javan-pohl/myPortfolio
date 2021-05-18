@@ -6,11 +6,11 @@
 }
 .marquee {
   width: 100%;
-  background-image: url(../public/images/denver-skyline.webp);
+  background: url(../public/images/denver-skyline.webp) black;
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 50% 20%;
-  max-height: 580px;
+  height: 500px;
 }
 .header {
   display: flex;
@@ -36,6 +36,6 @@
 
 @media screen and (max-width: 600px) {
   .marquee {
-    background-image: url(../public/images/denver-skyline-small.webp);
+    background: url(../public/images/denver-skyline-small.webp) black;
   }
 }
