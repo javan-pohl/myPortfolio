@@ -10,11 +10,11 @@
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 50% 20%;
-  height: 500px;
+  height: 470px;
 }
 .header {
   display: flex;
-  padding: 15%;
+  padding: 50px;
   flex-direction: column;
   align-items: center;
 }
