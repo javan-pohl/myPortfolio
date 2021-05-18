@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import NavBar from '../components/navBar'
+import CityBackground from './cityBackground'
 
 const name = 'Javan Pohl'
 export const siteTitle = name + ' Portfolio Website'
@@ -30,6 +31,17 @@ export default function Layout({ children, home, current }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <div className={styles.marquee}>
+        <div className={styles.marquee2}>
+          <CityBackground />
+          {/* <Image
+            src="/images/denver-skyline.webp"
+            unoptimized={true}
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+            priority={true}
+          /> */}
+        </div>
         <NavBar mainClass={utilStyles.navBar} current={current} />
         <header className={styles.header}>
           <div className={styles.headerCard}>
@@ -40,7 +52,7 @@ export default function Layout({ children, home, current }) {
                 alt={name}
                 layout="fill"
                 unoptimized={true}
-                loading='eager'
+                loading="eager"
                 priority={true}
               />
             </div>
