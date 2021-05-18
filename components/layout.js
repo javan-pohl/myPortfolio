@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import NavBar from '../components/navBar'
@@ -7,7 +8,10 @@ const name = 'Javan Pohl'
 export const siteTitle = name + ' Portfolio Website'
 
 export default function Layout({ children, home, current }) {
-  let pageName = current.indexOf('/') >= 0 ? current.substring(0, current.indexOf('/')).replace('-', ' ') : current.substring(0).replace('-', ' ');
+  let pageName =
+    current.indexOf('/') >= 0
+      ? current.substring(0, current.indexOf('/')).replace('-', ' ')
+      : current.substring(0).replace('-', ' ')
   return (
     <>
       <Head>
@@ -29,11 +33,15 @@ export default function Layout({ children, home, current }) {
         <NavBar mainClass={utilStyles.navBar} current={current} />
         <header className={styles.header}>
           <div className={styles.headerCard}>
-            <img
-              src="/images/profile.webp"
-              className={utilStyles.borderCircle}
-              alt={name}
-            />
+            <div className={utilStyles.borderCircle}>
+              <Image
+                src="/images/profile.webp"
+                className={utilStyles.borderCircle}
+                alt={name}
+                layout="fill"
+                priority={true}
+              />
+            </div>
             <div className={styles.headerCardInner}>
               <h2
                 className={utilStyles.headingMd}
