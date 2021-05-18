@@ -14,8 +14,10 @@ export default function Home() {
           <div className={utilStyles.neonWrapper}>
             <div className={utilStyles.neonText2}>
               <h1>
-                <div className={utilStyles.neonDiv}>JAVAN</div> 
-                <div className={utilStyles.neonDiv2}>{'\u00A0'}POHL</div>
+                <span className={utilStyles.neonDiv}>JAVAN</span> 
+                <span className={utilStyles.neonDiv2}>{'\u00A0'}POHL</span>
+                {/* <span className={utilStyles.neonDiv} style={{padding: '0 0 0 0', margin: '0'}}>JAVAN POHL</span>  */}
+
               </h1>
             </div>
           </div>
