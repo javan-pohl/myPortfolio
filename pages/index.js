@@ -8,6 +8,9 @@ export default function Home() {
     <>
       <Head>
         <title>{siteTitle}</title>
+        <link rel="dns-prefetch" href="../public/images/denver-skyline.webp" />
+        <link rel="dns-prefetch" href="../public/images/denver-skyline-small.webp" />
+        <link rel="dns-prefetch" href="../public/images/profile.webp" />
       </Head>
       <div className={utilStyles.main}>
         <section className={utilStyles.mainName}>
