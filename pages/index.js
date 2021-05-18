@@ -8,19 +8,26 @@ export default function Home() {
     <>
       <Head>
         <title>{siteTitle}</title>
-        <link rel="dns-prefetch" href="../public/images/denver-skyline.webp" />
-        <link rel="dns-prefetch" href="../public/images/denver-skyline-small.webp" />
-        <link rel="dns-prefetch" href="../public/images/profile.webp" />
+        <link
+          rel="preload"
+          href="/images/denver-skyline.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="/images/denver-skyline-small.webp"
+          as="image"
+        />
+        <link rel="preload" href="/images/profile.webp" as="image" />
       </Head>
       <div className={utilStyles.main}>
         <section className={utilStyles.mainName}>
           <div className={utilStyles.neonWrapper}>
             <div className={utilStyles.neonText2}>
               <h1>
-                <span className={utilStyles.neonDiv}>JAVAN</span> 
+                <span className={utilStyles.neonDiv}>JAVAN</span>
                 <span className={utilStyles.neonDiv2}>{'\u00A0'}POHL</span>
                 {/* <span className={utilStyles.neonDiv} style={{padding: '0 0 0 0', margin: '0'}}>JAVAN POHL</span>  */}
-
               </h1>
             </div>
           </div>
