@@ -53,7 +53,6 @@ export default function Layout({ children, home, current }) {
                 layout="fill"
                 unoptimized={true}
                 loading="eager"
-                priority={true}
               />
             </div>
             <div className={styles.headerCardInner}>
