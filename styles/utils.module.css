@@ -157,9 +157,9 @@ ul.linkNavUl {
 
 @font-face {
   font-family: neon;
-  src: local('Roboto'),
-    url(hello-denver-display/hellodenverdisplayregular_v1.6.ttf);
-  font-display: swap;
+  src: 
+    url(hello-denver-display/hellodenverdisplayregular_v1.6.ttf), local('Arial');
+  font-display: fallback;
 }
 .neonDiv {
   margin: 0 0 0 0;
