@@ -39,6 +39,7 @@ export default function Layout({ children, home, current }) {
                 className={utilStyles.borderCircle}
                 alt={name}
                 layout="fill"
+                quality={100}
                 priority={true}
               />
             </div>
