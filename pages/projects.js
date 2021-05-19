@@ -14,7 +14,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({ allProjectsData}) {
+export default async function Home({ allProjectsData}) {
   const router = useRouter()
   let thisPath = router.pathname.substr(1)
   return (

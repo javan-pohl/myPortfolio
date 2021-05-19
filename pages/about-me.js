@@ -16,7 +16,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({ bioData }) {
+export default async function Home({ bioData }) {
   const router = useRouter()
   let thisPath = router.pathname.substr(1)
   return (
