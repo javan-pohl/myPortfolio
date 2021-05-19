@@ -29,14 +29,6 @@
   text-transform: capitalize;
 }
 
-.borderCircle {
-  margin: auto;
-  border-radius: 9999px;
-  position: relative;
-  top: -100px;
-  height: 200px;
-  width: 200px;
-}
 
 .blogBody {
   padding: 10px 3%;

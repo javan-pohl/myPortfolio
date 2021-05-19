@@ -8,16 +8,16 @@ export default function Home() {
     <>
       <Head>
         <title>{siteTitle}</title>
-        <link
+        {/* <link
           rel="prefetch"
           href="/images/denver-skyline.webp"
           as="image"
-        />
-        <link
+        /> */}
+        {/* <link
           rel="prefetch"
-          href="/images/denver-skyline-small.webp"
+          href="/images/denver-skyline-1280.webp"
           as="image"
-        />
+        /> */}
         <link rel="prefetch" href="/images/profile.webp" as="image" />
       </Head>
       <div className={utilStyles.main}>
