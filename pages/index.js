@@ -8,6 +8,16 @@ export default function Home() {
     <>
       <Head>
         <title>{siteTitle}</title>
+        <link
+          rel="prefetch"
+          href="/images/denver-skyline.webp"
+          as="image"
+        />
+        <link
+          rel="prefetch"
+          href="/images/denver-skyline-small.webp"
+          as="image"
+        />
         <link rel="prefetch" href="/images/profile.webp" as="image" />
       </Head>
       <div className={utilStyles.main}>
@@ -17,6 +27,7 @@ export default function Home() {
               <h1>
                 <span className={utilStyles.neonDiv}>JAVAN</span>
                 <span className={utilStyles.neonDiv2}>{'\u00A0'}POHL</span>
+                {/* <span className={utilStyles.neonDiv} style={{padding: '0 0 0 0', margin: '0'}}>JAVAN POHL</span>  */}
               </h1>
             </div>
           </div>
