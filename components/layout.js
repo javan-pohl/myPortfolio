@@ -29,39 +29,16 @@ export default function Layout({ children, home, current }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <div className={styles.marquee}>
-        {/* <div className={styles.marquee2}> */}
-          {/* <div style={{background: 'url(/images/denver-skyline-1280.webp)', backgroundSize: 'auto', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 0%'}}> */}
-          {/* <Image
-            src="/images/denver-skyline.webp"
-            unoptimized={true}
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-            priority={true}
-          /> */}
-          {/* <img src="/images/denver-skyline.-1280webp" style={{height: '470px', width: 'full'}}/> */}
-          {/* <img src="/images/denver-skyline.-1280webp" /> */}
-          {/* </div> */}
-        {/* </div> */}
+
         <NavBar mainClass={utilStyles.navBar} current={current} />
         <header className={styles.header}>
           <div className={styles.headerCard}>
-            {/* <div className={utilStyles.borderCircle}> */}
-            {/* <Image
-                src="/images/profile.webp"
-                className={utilStyles.borderCircle}
-                alt={name}
-                layout="fill"
-                unoptimized={true}
-                loading="eager"
-              /> */}
             <img
               rel="prefetch"
               src="/images/profile.webp"
               className={styles.borderCircle}
               alt={name}
             />
-            {/* </div> */}
             <div className={styles.headerCardInner}>
               <h2
                 className={utilStyles.headingMd}

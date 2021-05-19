@@ -190,18 +190,8 @@ ul.linkNavUl {
 
 .neonText3 {
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 200;
   color: #57a7f2;
-  text-shadow: 0.1em 0em 0.25em #579ff2, 0.01em 0em 0.1em #0071f3,
-    0.01em 0em 2em #0071f3, 0.1em 0em 1em #0b1ae5, 0.1em 0em 1em #0b1ae5,
-    0.1em 0em 5em #0b1ae5, 0.1em 0em 5em #0b1ae5, 0.1em 0em 10em #0b1ae5;
-}
-
-.neonText3:hover {
-  color: #ffd8d8;
-  text-shadow: 0.1em 0em 0.25em #ffd8d8, 0.01em 0em 0.1em #f25757,
-    0.01em 0em 2em #f25757, 0.1em 0em 1em #e50b0b, 0.1em 0em 1em #e50b0b,
-    0.1em 0em 5em #e50b0b, 0.1em 0em 5em #e50b0b, 0.1em 0em 10em #e50b0b;
 }
 
 .resume {
