@@ -7,7 +7,4 @@ module.exports = {
       { href: 'blog', text: 'BLOG' },
     ],
   },
-  exportPathMap: () => ({
-    '/': { page: '/' },
-  }),
 }
