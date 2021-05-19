@@ -3,7 +3,6 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import NavBar from '../components/navBar'
-// import CityBackground from './cityBackground'
 
 const name = 'Javan Pohl'
 export const siteTitle = name + ' Portfolio Website'
