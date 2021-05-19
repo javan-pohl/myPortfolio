@@ -29,7 +29,6 @@ export default function Layout({ children, home, current }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <div className={styles.marquee}>
-
         <NavBar mainClass={utilStyles.navBar} current={current} />
         <header className={styles.header}>
           <div className={styles.headerCard}>

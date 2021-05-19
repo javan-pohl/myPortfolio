@@ -1,6 +1,5 @@
 import Link from 'next/link'
 
-// let myLinks = process.env.links
 const myLinks = [
   { href: '/', text: 'HOME' },
   { href: '/about-me', text: 'ABOUT ME' },
@@ -18,7 +17,6 @@ export default function NavBar({ mainClass, current }) {
     <section className={mainClass}>
       <ul>
         {myLinks.map(({ href, text }) => {
-          // console.log('href, newCurrent: ', href, newCurrent)
           return (
             <Link href={href} key={text}>
               <li className={href == newCurrent ? 'navBarActive' : 'pointer'}>

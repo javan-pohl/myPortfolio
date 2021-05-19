@@ -4,7 +4,6 @@ import { useRouter } from 'next/router'
 import { getBioData } from '../lib/bio'
 import Paper from '@material-ui/core/Paper'
 import path from 'path'
-// import Date from '../components/date'
 
 const postsDirectory = path.join(process.cwd(), 'public')
 
@@ -21,14 +20,23 @@ export default function Home({ bioData }) {
   const router = useRouter()
   let thisPath = router.pathname.substr(1)
   return (
-      <Layout current={thisPath}>
-        <Paper className={utilStyles.blogBody} elevation={3}>
-          <div dangerouslySetInnerHTML={{ __html: bioData.contentHtml }} />
-        <a download="Javan-Pohl-Resume.docx.pdf" href="Javan-Pohl-Resume.docx.pdf" title="Javan-Pohl-Resume">Download Resume</a>
-        </Paper>
-        <Paper className={utilStyles.blogBody} elevation={3}>
-          <iframe className={utilStyles.resume} src="Javan-Pohl-Resume.docx.pdf"></iframe>
-        </Paper>
-      </Layout>
+    <Layout current={thisPath}>
+      <Paper className={utilStyles.blogBody} elevation={3}>
+        <div dangerouslySetInnerHTML={{ __html: bioData.contentHtml }} />
+        <a
+          download="Javan-Pohl-Resume.docx.pdf"
+          href="Javan-Pohl-Resume.docx.pdf"
+          title="Javan-Pohl-Resume"
+        >
+          Download Resume
+        </a>
+      </Paper>
+      <Paper className={utilStyles.blogBody} elevation={3}>
+        <iframe
+          className={utilStyles.resume}
+          src="Javan-Pohl-Resume.docx.pdf"
+        ></iframe>
+      </Paper>
+    </Layout>
   )
 }
