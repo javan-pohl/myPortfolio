@@ -1,0 +1,276 @@
+<html style="padding: 0; margin: 0; height: 1447px; width: 902px;">
+
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Crimson+Text&family=Dosis:wght@300;400&family=Fira+Code:wght@300;400&family=Inconsolata:wght@200;300;400&family=Montserrat:wght@100;200&family=Nunito:wght@200&family=Roboto+Mono:wght@200&family=Rubik:wght@300&family=STIX+Two+Math&family=Source+Sans+Pro:wght@200&display=swap"
+		rel="stylesheet">
+	<style>
+		@font-face {
+			font-family: 'Klimes';
+			src: url('Klimes.ttf.woff') format('woff'),
+				url('Klimes.ttf.svg#Klimes') format('svg'),
+				url('Klimes.ttf.eot'),
+				url('Klimes.ttf.eot?#iefix') format('embedded-opentype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Tai Heritage Pro';
+			src: url('TaiHeritagePro.tff') format('woff')
+		}
+
+		body {
+			color: rgb(255, 242, 242);
+			height: 1447px;
+			width: 902px
+		}
+
+		.pinkBackground {
+			position: absolute;
+			height: 411px;
+			width: 902px;
+			background-color: #fcc4bc;
+		}
+
+		.greenBackground {
+			position: absolute;
+			top: 411px;
+			height: 902px;
+			width: 902px;
+			background-color: #24444c;
+		}
+
+		.workshop {
+			color: rgb(245, 245, 245);
+			font-family: 'Rubik', sans-serif;
+			font-size: 19px;
+			font-weight: 200px;
+			letter-spacing: 2px;
+			position: absolute;
+			top: 140px;
+			left: 70px;
+			font-weight: bold;
+		}
+
+		.ion {
+			color: rgb(247, 247, 247);
+			font-family: 'Roboto Mono', monospace;
+			font-size: 32px;
+			font-weight: bold;
+			position: absolute;
+			top: 145px;
+			left: 765px;
+			width: 165px;
+			text-align: right;
+			line-height: 30px;
+			transform: rotate(270deg);
+			border-bottom: 2px solid;
+			padding-bottom: 2px;
+		}
+
+		.redXbox {
+			position: absolute;
+			top: 265px;
+			left: 558px;
+
+		}
+
+		.forwardRed {
+			position: absolute;
+			border-bottom: 10px solid red;
+			width: 150px;
+			transform: rotate(45deg);
+		}
+
+		.backRed {
+			position: absolute;
+			border-bottom: 10px solid red;
+			width: 150px;
+			transform: rotate(135deg);
+			-webkit-animation: spin 3s linear infinite;
+			-moz-animation: spin 3s linear infinite;
+			animation: spin 3s linear infinite;
+		}
+
+		@-moz-keyframes spin {
+			100% {
+				-moz-transform: rotate(315deg);
+			}
+		}
+
+		@-webkit-keyframes spin {
+			100% {
+				-webkit-transform: rotate(315deg);
+			}
+		}
+
+		@keyframes spin {
+			100% {
+				-webkit-transform: rotate(315deg);
+				transform: rotate(315deg);
+			}
+		}
+
+		.title {
+			font-family: 'STIX Two Math', serif;
+			font-size: 123px;
+			position: absolute;
+			top: 227px;
+			left: 70px;
+			width: 650px;
+			line-height: 120px;
+			z-index: 2;
+		}
+
+		.titleDate {
+			font-size: 135px;
+			padding-left: 90px;
+			line-height: 140px;
+		}
+
+		.titleDash {
+			position: absolute;
+			top: 660px;
+			left: 70px;
+			width: 87px;
+			border-bottom: solid 8px;
+		}
+
+		.schlomo {
+			position: absolute;
+			top: 750px;
+			left: 70px;
+			font-size: 30px;
+			font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter
+		}
+
+		.harvard {
+			color: rgb(204, 203, 203);
+			font-size: 17px;
+		}
+
+		.time {
+			font-family: 'Fira Code', monospace;
+			position: absolute;
+			top: 870px;
+			left: 70px;
+			font-feature-settings: 'zero';
+			font-variant-numeric: slashed-zero ordinal;
+			font-variant: slashed-zero;
+			font-size: 31px;
+			font-weight: 400;
+			z-index: 2;
+		}
+
+		.colon {
+			font-family: 'Alfa Slab One', cursive;
+			font-weight: 200;
+			margin: 0 4;
+		}
+
+		.forum {
+			font-family: 'Roboto Mono', monospace;
+		}
+
+		.timeSlashBox {
+			position: absolute;
+			top: 910px;
+			left: 70px;
+		}
+
+		img {
+			width: 289;
+			position: absolute;
+			top: 895px;
+			left: 460px;
+		}
+
+		.address {
+			font-family: 'Roboto Mono', monospace;
+			font-size: 10px;
+			font-weight: 600;
+			color: rgb(228, 228, 228);
+			position: absolute;
+			top: 1219px;
+			left: 70px;
+			width: 300px;
+			border-bottom: solid 1px;
+			line-height: 10px;
+			padding-bottom: 8px;
+		}
+
+		.url {
+			float: right;
+		}
+
+		.lowerRight {
+			font-family: 'Montserrat', sans-serif;
+			color: rgb(204, 203, 203);
+			position: absolute;
+			top: 1180px;
+			left: 820px;
+			font-size: 85px;
+			font-weight: 100px;
+		}
+
+		.lowerRight>div {
+			line-height: 35px;
+		}
+
+		.minusSign {
+			position: absolute;
+			top: 1238px;
+			left: 826px;
+			width: 34px;
+			border-bottom: 2px solid;
+		}
+	</style>
+
+
+<body>
+	<div class="pinkBackground"></div>
+	<div class="greenBackground"></div>
+	<div class="workshop">
+		WORKSHOP</div>
+	<div class="ion">
+		ion</div>
+	<div class="titleDash"></div>
+	<div class="title">
+		The Ethics of Artificial Intelligence
+		<!-- I must admit defeat in finding a font that was a closer match for the date. Even when using matching software-->
+		<span class="titleDate">11.10.20
+		</span>
+	</div>
+	<div class='redXbox'>
+		<div class="forwardRed"></div>
+		<div class="backRed"></div>
+	</div>
+	<div class="schlomo">
+		Schlomo Zilberstein
+		<div class="harvard">
+			HARVARD UNIVERSITY
+		</div>
+	</div>
+	<div class="time">
+		1<span class="colon">:</span>00p</br>
+		The Forum</br>
+	</div>
+	<div class="timeSlashBox">
+		<div class="backRed slashAnimation"></div>
+	</div>
+	<img src="https://townsquare.media/site/43/files/2014/12/150631496-300x297.jpg?w=980&q=75">
+	<div class="address">
+		4201 Main Street</br>
+		Houston, Texas
+		<span class="url">IONHOUSTON.COM</span>
+	</div>
+	<div class="lowerRight">
+		<div class="plusSign">+</div>
+	</div>
+	<div class="minusSign"></div>
+</body>
+
+</html>
